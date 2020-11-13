@@ -1,0 +1,65 @@
+/*
+Hamburger Menu - By J-C Castagne @ Github https://github.com/JCcastagne
+*/
+
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+box-sizing: border-box;
+-moz-text-size-adjust: 100%;
+-ms-text-size-adjust: 100%;
+-webkit-text-size-adjust: 100%;
+text-size-adjust: 100%;
+font-family: 'Noto Sans JP', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+color: black;
+background-color: white;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+
+main{
+  padding: 2em;
+}
+
+header{
+  background-image: url(../img/header.jpeg);
+  background-size: cover;
+  background-position: top;
+  height: 100vh;
+}
+
+.title{
+  position: absolute;
+  bottom: 0em;
+  left: 0.25em;
+  padding-bottom: 0.5em;
+  font-weight: 100;
+  font-size: clamp(3em, 15vw, 6em);
+  background: rgb(254,162,202);
+  background: linear-gradient(22deg, rgba(254,162,202,1) 0%, rgba(254,180,232,1) 25%, rgba(254,171,249,1) 45%, rgba(175,138,169,1) 65%, rgba(94,74,83,1) 85%, rgba(47,47,47,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 1px 1px 30px rgb(0, 0, 0);
+
+  line-height: 0.9em;
+}
+
+.placeHolderText{
+  font-size: 1.2em;
+  padding-bottom: 0.5em;
+}
+
+@media all and (min-width: 800px){
+  header{
+    background-image: url(/img/header-rotated.jpeg);
+  }
+}
